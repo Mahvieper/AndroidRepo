@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="india_villages">
+        <item>"SELOO"</item>
+        <item>"WARDHA"</item>
+        <item> "AAJADA"</item>
+        <item>"AAKOLI"</item>
+    </string-array>
+</resources>
