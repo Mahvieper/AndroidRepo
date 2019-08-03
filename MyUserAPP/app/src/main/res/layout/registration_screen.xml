@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/limegreen"
+    app:titleTextColor="@color/colorWhite"
+    >
+
+</androidx.appcompat.widget.Toolbar>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:text="@string/PersonalInfo"
+            android:textSize="@dimen/personal"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_name_height"
+            android:layout_marginTop="@dimen/mt_et_name"
+            android:hint="Name"
+            android:inputType="text"/>
+
+        <TextView
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:text="@string/Gender"
+            android:textSize="@dimen/gender"
+            android:textStyle="bold" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:id="@+id/Gender"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mt_txtView_registration"
+                android:text="@string/Male" />
+
+            <RadioButton
+                android:id="@+id/radio_ninjas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ml_radio_btn2"
+                android:layout_marginTop="@dimen/mt_txtView_registration"
+                android:text="@string/Female" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_registration"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:hint="Age"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/Contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_registration"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:hint="Contact Number"
+            android:inputType="phone"/>
+
+        <!--<com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pass"
+            android:hint="Password"
+            app:drawable_show="@drawable/eye"
+            app:drawable_hide="@drawable/hide"
+            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Pass"
+                android:layout_width="320dp"
+                android:layout_height="@dimen/et_height_registration"
+                android:layout_marginTop="@dimen/mt_txtView_registration"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        <ImageButton
+            android:id="@+id/Visibility"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hide"
+            android:background="@android:color/transparent"/>
+        </LinearLayout>
+    <!--   -->
+
+        <EditText
+            android:id="@+id/PassCon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_registration"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"/>
+
+        <TextView
+            style="@style/TextAppearance.AppCompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:text="@string/Address"
+            android:textSize="@dimen/address"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:text="@string/Country" />
+
+        <Spinner
+            android:id="@+id/countries_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:text="@string/State" />
+
+        <Spinner
+            android:id="@+id/states_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration" />
+
+        <EditText
+            android:id="@+id/aadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_registration"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:hint="Aadhaar Number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:text="@string/IMEI" />
+
+        <EditText
+            android:id="@+id/IMEI"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_registration"
+            android:layout_marginTop="@dimen/mt_txtView_registration"
+            android:hint="IMEI" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="@dimen/SignIn_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded_login"
+            android:text="SIGN UP"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

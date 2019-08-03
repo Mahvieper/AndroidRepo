@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="idea_text_margintop">20sp</dimen>
+    <dimen name="txtsize_Main_title1">20sp</dimen>
+    <dimen name="mt_title">50dp</dimen>
+    <dimen name="mt_main_title2">10sp</dimen>
+    <dimen name="mt_edit_text1">40dp</dimen>
+    <dimen name="ml_edit_text1">40dp</dimen>
+    <dimen name="phone_width">30dp</dimen>
+    <dimen name="phone_height">30dp</dimen>
+    <dimen name="mt_edit_text2">20dp</dimen>
+    <dimen name="ml_edit_text2">40dp</dimen>
+    <dimen name="password_width">30dp</dimen>
+    <dimen name="password_height">30dp</dimen>
+    <dimen name="mt_btn_login">30dp</dimen>
+    <dimen name="ml_btn_login">100dp</dimen>
+    <dimen name="ml_rem_pass">125dp</dimen>
+    <dimen name="mt_rem_pass">20dp</dimen>
+    <dimen name="ml_checkbox">90dp</dimen>
+    <dimen name="mt_checkbox">15dp</dimen>
+    <dimen name="mt_main_signup">30dp</dimen>
+    <dimen name="ml_main_signup">110dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="personal">15dp</dimen>
+    <dimen name="gender">15dp</dimen>
+    <dimen name="address">15dp</dimen>
+    <dimen name="Login_title_1">30dp</dimen>
+    <dimen name="et_pass_width">280dp</dimen>
+    <dimen name="et_pass_height">55dp</dimen>
+    <dimen name="mt_img_button">30dp</dimen>
+    <dimen name="SignIn_btn_width">150dp</dimen>
+    <dimen name="mt_txtView_registration">10dp</dimen>
+    <dimen name="et_name_height">40dp</dimen>
+    <dimen name="mt_et_name">10dp</dimen>
+    <dimen name="ml_radio_btn2">30dp</dimen>
+    <dimen name="et_height_registration">40dp</dimen>
+</resources>
