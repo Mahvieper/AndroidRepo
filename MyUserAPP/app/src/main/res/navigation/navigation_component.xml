@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_component"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myuserapplication.UserInterface.Fragments.LoginFragment"
+        android:label="login_screen"
+        tools:layout="@layout/login_screen" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.myuserapplication.UserInterface.Fragments.RegistrationFragment"
+        android:label="registration_screen"
+        tools:layout="@layout/registration_screen" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myuserapplication.UserInterface.Fragments.HomeFragment"
+        android:label="home_screen"
+        tools:layout="@layout/home_screen" />
+</navigation>

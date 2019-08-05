@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/recycleview_border">
+
+
+    <ImageView
+        android:id="@+id/dummy_user"
+        android:layout_width="@dimen/dummy_img_width"
+        android:layout_height="@dimen/dummy_img_height"
+        android:src="@drawable/dummy"/>
+
+    <TextView
+        android:id="@+id/user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dummy_user"
+
+        android:textSize="@dimen/dummy_user_txtsize"
+        android:padding="@dimen/dummy_user_title_padding"
+        android:layout_marginStart="@dimen/ms_dummy_user_title"
+        android:layout_marginLeft="@dimen/ml_dummy_user_title"/>
+
+    <TextView
+        android:id="@+id/user_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_title"
+        android:layout_toEndOf="@+id/dummy_user"
+        android:layout_toRightOf="@+id/dummy_user"
+        android:textSize="@dimen/subtitle_txtsize"
+        android:padding="@dimen/subtitle_padding"
+        android:layout_marginStart="@dimen/ms_subtitle"
+        android:layout_marginLeft="@dimen/ml_subtitle"/>
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="@dimen/rv_et_width"
+        android:layout_height="@dimen/rv_et_height"
+        android:padding="@dimen/rv_et_padding"
+        android:layout_toEndOf="@+id/dummy_user"
+        android:layout_toRightOf="@+id/dummy_user"
+        android:layout_below="@+id/user_subtitle"
+        />
+
+    <TextView
+        android:id="@+id/user_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:textSize="8sp"
+        android:padding="20sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"/>
+
+
+</RelativeLayout>
