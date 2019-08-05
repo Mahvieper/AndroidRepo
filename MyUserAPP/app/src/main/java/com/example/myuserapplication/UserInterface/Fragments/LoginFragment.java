@@ -16,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.example.myuserapplication.R;
 import com.example.myuserapplication.UserInterface.Authorization;
@@ -77,13 +79,14 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     txtSignup.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ((Authorization) getActivity()).loadFragment(
+           /* ((Authorization) getActivity()).loadFragment(
                     R.id.container1,
                     new RegistrationFragment(),
                     RegistrationFragment.CLASSTAG,
                     true
-            );
-
+            );*/
+            NavController navController= Navigation.findNavController(getActivity(),R.id.my_nav_host);
+            navController.navigate(R.id.action_loginFragment_to_registrationFragment);
         }
     });
 

@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.myuserapplication.UserInterface.Fragments.LoginFragment;
 import com.example.myuserapplication.R;
 
 public class Authorization extends AppCompatActivity {
@@ -25,16 +24,18 @@ public class Authorization extends AppCompatActivity {
         Log.e(TAG,"In OnCreate");
 
         if (savedInstanceState == null) {
-            loadFragment(
+          /*  loadFragment(
                     R.id.container1,
                     new LoginFragment(),
                     LoginFragment.CLASSTAG,
                     false
-            );
+            );*/
+
+
         }
     }
 
-    public void loadFragment(
+   /* public void loadFragment(
             int containerId,
             Fragment fragment,
             String classTag,
@@ -53,5 +54,5 @@ public class Authorization extends AppCompatActivity {
         } catch (Exception e) {
             Toast.makeText(this,"Not able to make Fragment",Toast.LENGTH_SHORT);
         }
-    }
+    }*/
 }
