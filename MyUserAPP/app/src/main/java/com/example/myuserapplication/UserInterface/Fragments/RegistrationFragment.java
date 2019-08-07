@@ -2,9 +2,7 @@ package com.example.myuserapplication.UserInterface.Fragments;
 
 import android.Manifest;
 import android.annotation.TargetApi;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,7 +21,6 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,7 +35,7 @@ import com.example.myuserapplication.Utility.DialogUtil;
 
 
 import static androidx.core.content.ContextCompat.checkSelfPermission;
-import static com.example.myuserapplication.UserInterface.Authorization.TAG;
+import static com.example.myuserapplication.UserInterface.UI.Authorization.TAG;
 
 public class RegistrationFragment extends Fragment implements View.OnClickListener, AdapterView.OnItemSelectedListener {
     private static final int PERMISSION_READ_STATE = 1;

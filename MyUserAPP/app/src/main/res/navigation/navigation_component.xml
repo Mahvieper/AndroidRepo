@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_shopping2"
+            app:destination="@id/shopping2" />
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
@@ -27,4 +30,9 @@
         android:name="com.example.myuserapplication.UserInterface.Fragments.HomeFragment"
         android:label="home_screen"
         tools:layout="@layout/home_screen" />
+    <activity
+        android:id="@+id/shopping2"
+        android:name="com.example.myuserapplication.UserInterface.UI.Shopping"
+        android:label="shopping_screen"
+        tools:layout="@layout/shopping_screen_recycler" />
 </navigation>

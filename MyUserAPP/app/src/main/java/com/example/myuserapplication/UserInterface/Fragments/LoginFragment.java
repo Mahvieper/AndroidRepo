@@ -1,4 +1,5 @@
 package com.example.myuserapplication.UserInterface.Fragments;
+import android.content.Intent;
 import android.util.Log;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -20,6 +21,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.myuserapplication.R;
+import com.example.myuserapplication.UserInterface.UI.Shopping;
 import com.example.myuserapplication.Utility.DialogUtil;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -125,8 +127,10 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             switch (view.getId()) {
                 case R.id.btn_login:
                     if (onLogin()) {
-                        NavController navController=Navigation.findNavController(getActivity(),R.id.my_nav_host);
-                        navController.navigate(R.id.action_loginFragment_to_homeFragment);
+                       /* NavController navController=Navigation.findNavController(getActivity(),R.id.my_nav_host);
+                        navController.navigate(R.id.action_loginFragment_to_homeFragment);*/
+                       NavController navController=Navigation.findNavController(getActivity(),R.id.my_nav_host);
+                       navController.navigate(R.id.action_loginFragment_to_shopping2);
                         Toast.makeText(getActivity(),"Login Successful",Toast.LENGTH_SHORT).show();
                     }
                     break;
@@ -134,7 +138,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             }
         }catch (Exception e)
         {
-            Log.e(TAG,"Login Fragment onClick for Button Method Called");
+            Log.e(TAG,""+e);
         }
     }
 
