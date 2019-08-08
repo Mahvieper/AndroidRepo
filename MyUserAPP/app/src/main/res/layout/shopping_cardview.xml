@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp" android:layout_height="240dp"
+    android:layout_margin="5dp">
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shopping_img_ht"
+            android:scaleType="centerCrop"/>
+
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:paddingTop="3dp"
+            android:text="Apple"
+            android:textSize="@dimen/product_text_size" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="15000"
+            android:textSize="10sp" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
